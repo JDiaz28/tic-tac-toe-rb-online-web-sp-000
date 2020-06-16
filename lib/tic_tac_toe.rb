@@ -107,7 +107,7 @@ end
 def play(board)
   turn = gets
   turns = 0
-  board.over?(board) {|game| game == 9}
+  board.over? {|game| game == 9}
   until turns == 9
     turns += 1
     turn(board)
